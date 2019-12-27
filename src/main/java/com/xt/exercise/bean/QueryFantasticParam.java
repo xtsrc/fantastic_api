@@ -5,5 +5,5 @@ package com.xt.exercise.bean;
  * @Date: 2019/12/25 17:22
  * @Description:
  */
-public class QueryFantasticParam {
+public final class QueryFantasticParam {
 }

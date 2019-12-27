@@ -5,5 +5,5 @@ package com.xt.exercise.bean;
  * @Date: 2019/12/25 16:58
  * @Description:
  */
-public class Fantastic {
+public final class Fantastic {
 }

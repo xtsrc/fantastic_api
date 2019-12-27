@@ -19,7 +19,7 @@ import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 import com.google.common.collect.Lists;
 
-public class JsonUtils {
+public final class JsonUtils {
     private static final ObjectMapper mapper = new ObjectMapper();
 
     static {

@@ -10,7 +10,7 @@ import com.xt.exercise.enums.SortOrder;
  * @Date: 2019/12/25 17:03
  * @Description:
  */
-public class PageQuery<T> implements Serializable {
+public final class PageQuery<T> implements Serializable {
     private static final long serialVersionUID = -8149462096653228454L;
     private T bean;
     private int pageIndex;

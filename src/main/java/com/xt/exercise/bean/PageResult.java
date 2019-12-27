@@ -10,7 +10,7 @@ import com.xt.exercise.util.JsonUtils;
  * @Date: 2019/12/25 17:24
  * @Description:
  */
-public class PageResult<T> implements Serializable {
+public final class PageResult<T> implements Serializable {
     private static final long serialVersionUID = -2830151567553317478L;
     private int total = 0;
     private int pageIndex = 0;

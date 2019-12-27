@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @Date: 2019/12/25 16:59
  * @Description:
  */
-public class RpcResponse<T> implements Serializable {
+public final class RpcResponse<T> implements Serializable {
     private static final long serialVersionUID = -8857537357659842080L;
     private Boolean success;
     private String message;
