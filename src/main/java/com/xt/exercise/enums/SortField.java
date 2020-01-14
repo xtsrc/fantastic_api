@@ -5,12 +5,12 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * @Author: tao.xiong
  * @Date: 2019/12/25 17:04
- * @Description:
+ * @Description: 排序字段
  */
 public enum SortField {
     update_time(), id(), create_time();
 
-    private SortField() {
+    SortField() {
     }
 
     public static SortField parase(String sortField) {
