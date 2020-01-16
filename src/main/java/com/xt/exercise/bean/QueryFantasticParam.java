@@ -14,13 +14,13 @@ public final class QueryFantasticParam implements Serializable {
     private static final long serialVersionUID = 6983823845626912068L;
 
     @NotBlank(message = "业务线Id不能为空")
-    private String BusinessId;
+    private String businessId;
 
     public String getBusinessId() {
-        return BusinessId;
+        return businessId;
     }
 
     public void setBusinessId(String businessId) {
-        BusinessId = businessId;
+        this.businessId = businessId;
     }
 }
