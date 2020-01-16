@@ -18,7 +18,7 @@ import com.xt.exercise.bean.ScrollQuery;
 public interface IFantasticService {
     RpcResponse<List<Fantastic>> query(QueryFantasticParam queryFantasticParam);
 
-    RpcResponse<PageResult<List<Fantastic>>> pageQuery(PageQuery<QueryFantasticParam> pageQuery);
+    RpcResponse<PageResult<Fantastic>> pageQuery(PageQuery<QueryFantasticParam> pageQuery);
 
     RpcResponse scrollWithFunction(ScrollQuery<QueryFantasticParam> scrollQuery,
             Function<List<Fantastic>, Long> function);
