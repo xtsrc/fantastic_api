@@ -36,4 +36,20 @@ public final class RpcResponse<T> implements Serializable {
     public void setData(T data) {
         this.data = data;
     }
+
+    public static RpcResponse fail(String msg) {
+        return createResponse(Boolean.FALSE, msg, null);
+    }
+
+    public static <T> RpcResponse<T> success(T data) {
+        return createResponse(Boolean.TRUE, null, data);
+    }
+
+    public static <T> RpcResponse<T> createResponse(boolean success, String message, T data) {
+        RpcResponse<T> ret = new RpcResponse();
+        ret.setSuccess(success);
+        ret.setMessage(message);
+        ret.setData(data);
+        return ret;
+    }
 }
