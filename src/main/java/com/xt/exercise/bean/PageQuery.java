@@ -81,4 +81,13 @@ public final class PageQuery<T> implements Serializable {
     public void setSortOrder(String sortOrder) {
         this.sortOrder = sortOrder;
     }
+
+    public int getBeginIndex() {
+        int beginIndex = this.getPageIndex() * this.pageSize;
+        if (beginIndex > this.getTotalCount()) {
+            beginIndex = this.getTotalCount();
+        }
+
+        return beginIndex < 0 ? 0 : beginIndex;
+    }
 }
