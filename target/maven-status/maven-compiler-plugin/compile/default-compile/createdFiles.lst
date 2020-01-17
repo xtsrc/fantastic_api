@@ -1,0 +1,13 @@
+com\xt\exercise\bean\Fantastic.class
+com\xt\exercise\util\JsonUtils.class
+com\xt\exercise\util\JsonUtils$MyDtoNullKeySerializer.class
+com\xt\exercise\bean\KafkaMessage.class
+com\xt\exercise\enums\SortField.class
+com\xt\exercise\bean\QueryFantasticParam.class
+com\xt\exercise\enums\SortOrder.class
+com\xt\exercise\enums\GroupField.class
+com\xt\exercise\api\IFantasticService.class
+com\xt\exercise\bean\RpcResponse.class
+com\xt\exercise\bean\PageResult.class
+com\xt\exercise\bean\ScrollQuery.class
+com\xt\exercise\bean\PageQuery.class
