@@ -5,6 +5,7 @@ import java.util.List;
 import com.xt.exercise.enums.GroupField;
 import com.xt.exercise.enums.SortField;
 import com.xt.exercise.enums.SortOrder;
+import com.xt.exercise.validate.InEnum;
 
 /**
  * @Author: tao.xiong
@@ -15,17 +16,13 @@ public class ScrollQuery<T> {
     private int scrollSize;
     private Long scrollId;
     private List<String> include;
-    /**
-     * @see GroupField#name()
-     */
+    @InEnum(enumClass = GroupField.class)
     private String groupField;
-    /**
-     * @see SortField#name()
-     */
+
+    @InEnum(enumClass = SortField.class)
     private String sortField;
-    /**
-     * @see SortOrder#name()
-     */
+
+    @InEnum(enumClass = SortOrder.class)
     private String sortOrder;
 
     private T bean;

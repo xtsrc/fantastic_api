@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import com.xt.exercise.enums.SortField;
 import com.xt.exercise.enums.SortOrder;
+import com.xt.exercise.validate.InEnum;
 
 /**
  * @Author: tao.xiong
@@ -17,13 +18,9 @@ public final class PageQuery<T> implements Serializable {
     private int pageSize = 20;
     private int totalCount;
     private int totalPages;
-    /**
-     * @see SortField#name()
-     */
+    @InEnum(enumClass = SortField.class)
     private String sortField;
-    /**
-     * @see SortOrder#name()
-     */
+    @InEnum(enumClass = SortOrder.class)
     private String sortOrder;
 
     public T getBean() {
